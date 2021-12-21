@@ -43,7 +43,7 @@ export class ShoppingCart {
   }
 
   public isEmpty(): boolean {
-    return !this.items.length;
+    return this.items.length === 0;
   }
 
   public sendMessage(message: string): void {
