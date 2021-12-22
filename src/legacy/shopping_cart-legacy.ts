@@ -5,7 +5,7 @@ type Item = {
 
 type OrderStatus = "open" | "closed";
 
-export class ShoppingCart {
+export class ShoppingCartLegacy {
   private readonly _items: Item[] = [];
   private _orderStatus: OrderStatus = "open";
 
@@ -59,12 +59,12 @@ export class ShoppingCart {
   }
 }
 
-const shoppingCart = new ShoppingCart();
+const shoppingCartLegacy = new ShoppingCartLegacy();
 
-shoppingCart.addItem({ name: "Camiseta", price: 40.0 });
-shoppingCart.addItem({ name: "Caderno", price: 13.2321321 });
+shoppingCartLegacy.addItem({ name: "Camiseta", price: 40.0 });
+shoppingCartLegacy.addItem({ name: "Caderno", price: 13.2321321 });
 
-console.log(shoppingCart.items);
-console.log(shoppingCart.total());
-shoppingCart.checkout();
-console.log(shoppingCart.orderStatus);
+console.log(shoppingCartLegacy.items);
+console.log(shoppingCartLegacy.total());
+shoppingCartLegacy.checkout();
+console.log(shoppingCartLegacy.orderStatus);
