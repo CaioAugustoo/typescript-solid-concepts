@@ -9,7 +9,7 @@ import { MessagingProtocol } from "./classes/interfaces/messaging";
 
 class MessagingMock implements MessagingProtocol {
   sendMessage(message: string): void {
-    console.log("Message sent by mock");
+    console.log(message);
   }
 }
 
