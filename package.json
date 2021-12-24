@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "npx jest",
-    "test:silent": "npx jest --watchAll --silent --noStackTrace"
+    "test:watch": "npx jest --watchAll --silent --noStackTrace"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^27.0.3",
+    "jest": "^27.4.5",
     "ts-jest": "^27.1.2",
     "ts-loader": "^9.2.6",
     "ts-node": "^10.4.0",
