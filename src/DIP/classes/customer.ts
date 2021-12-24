@@ -13,11 +13,11 @@ export class IndividualCustomer
     public cpf: string
   ) {}
 
-  getName(): string {
+  public getName(): string {
     return `${this.firstName} ${this.lastName}`;
   }
 
-  getId(): string {
+  public getId(): string {
     return this.cpf;
   }
 }
