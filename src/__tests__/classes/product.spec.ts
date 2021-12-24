@@ -5,7 +5,7 @@ function makeSut(product: Item): Item {
   return new Product(product.name, product.price);
 }
 
-describe("Persistency", () => {
+describe("Product", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
