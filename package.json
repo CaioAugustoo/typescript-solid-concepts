@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx jest"
+    "test": "npx jest",
+    "test:silent": "npx jest --watchAll --silent --noStackTrace"
   },
   "keywords": [],
   "author": "",
